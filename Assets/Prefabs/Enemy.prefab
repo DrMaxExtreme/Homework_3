@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 4946570027493951033}
   - component: {fileID: 4946570027493951034}
   - component: {fileID: 4946570027493951035}
+  - component: {fileID: 6377634003892468414}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -100,7 +101,7 @@ Transform:
   m_GameObject: {fileID: 4946570027493951039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.45, y: 3, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4946570026331609765}
   m_Father: {fileID: 0}
@@ -187,3 +188,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!114 &6377634003892468414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4946570027493951039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e01483c5bf7ef846b41503d7006ef9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
