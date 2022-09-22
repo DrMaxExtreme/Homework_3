@@ -8,6 +8,8 @@ public class Diamond : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
+            player.GetComponent<PlayerDiamondCounter>().DiamondPickup();
+
             Destroy(gameObject);
         }
     }
