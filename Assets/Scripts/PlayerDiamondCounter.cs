@@ -16,13 +16,18 @@ public class PlayerDiamondCounter : MonoBehaviour
         _diamondsCount = 0;
         _maxDiamonds = _diamonds.childCount;
 
-        _scoreText.text = _diamondsCount + " / " + _maxDiamonds;
+        ShowDiamondsCount(_diamondsCount, _maxDiamonds);
     }
 
     public void DiamondPickup()
     {
         _diamondsCount++;
 
-        _scoreText.text = _diamondsCount + " / " + _maxDiamonds;
+        ShowDiamondsCount(_diamondsCount, _maxDiamonds);
+    }
+
+    private void ShowDiamondsCount(int diamondsCount, int maxDiamonds)
+    {
+        _scoreText.text = diamondsCount + " / " + maxDiamonds;
     }
 }

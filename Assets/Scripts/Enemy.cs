@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
-            player.GetComponent<SpriteRenderer>();
             Destroy(player.gameObject);
         }
     }
