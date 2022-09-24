@@ -19,9 +19,6 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (_player.Velocity.x != 0)
-            _animator.SetBool(IsRun, true);
-        else
-            _animator.SetBool(IsRun, false);
+        _animator.SetBool(IsRun, _player.Velocity.x != 0);
     }
 }

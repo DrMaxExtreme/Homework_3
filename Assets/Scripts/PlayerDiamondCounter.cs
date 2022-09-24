@@ -30,4 +30,14 @@ public class PlayerDiamondCounter : MonoBehaviour
     {
         _scoreText.text = diamondsCount + " / " + maxDiamonds;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<Diamond>(out Diamond diamond))
+        {
+            DiamondPickup();
+
+            Destroy(diamond.gameObject);
+        }
+    }
 }
